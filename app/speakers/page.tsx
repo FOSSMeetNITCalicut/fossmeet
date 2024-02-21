@@ -17,6 +17,7 @@ export default async function Page() {
       },
     }
   )
+  console.log(speakers)
   return (
     <div className={styles['speaker-container']}>
       <Navbar />
