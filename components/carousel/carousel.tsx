@@ -44,6 +44,8 @@ function Carousel({ children }) {
     speed: 500,
     slidesToShow: slidesToShow,
     slidesToScroll: slidesToScroll,
+    autoplay: true,
+    autoplaySpeed: 2000,
     prevArrow: (
       <PrevArrow
         onClick={function (

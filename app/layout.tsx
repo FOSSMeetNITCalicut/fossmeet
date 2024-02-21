@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <title>FOSSMeet&apos;24 – FOSSCell, NIT Calicut</title>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/logo2.jpeg" sizes="any" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
