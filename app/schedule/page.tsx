@@ -18,7 +18,7 @@ export default async function Page() {
     {},
     {
       next: {
-        revalidate: 60 * 60 * 24 * 7,
+        revalidate: parseInt(process.env.REVALIDATE_TIME),
       },
     }
   )

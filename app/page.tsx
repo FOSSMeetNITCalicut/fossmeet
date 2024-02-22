@@ -9,38 +9,38 @@ import Navbar from '../components/common/Navbar'
 import SpeakersSection from '../components/speakers/Section'
 
 export default async function Home() {
-	const speakers = await client.fetch<Speaker[]>(
-		`*[_type=="speaker"]`,
-		{},
-		{
-			next: {
-				revalidate: 60 * 60 * 24 * 7,
-			},
-		}
-	)
+  const speakers = await client.fetch<Speaker[]>(
+    `*[_type=="speaker"]`,
+    {},
+    {
+      next: {
+        revalidate: parseInt(process.env.REVALIDATE_TIME),
+      },
+    }
+  )
 
-	const workshops = await client.fetch<Workshop[]>(
-		`*[_type=="workshop"]`,
-		{},
-		{
-			next: {
-				revalidate: 60 * 60 * 24 * 7,
-			},
-		}
-	)
+  const workshops = await client.fetch<Workshop[]>(
+    `*[_type=="workshop"]`,
+    {},
+    {
+      next: {
+        revalidate: parseInt(process.env.REVALIDATE_TIME),
+      },
+    }
+  )
 
-	return (
-		<div>
-			<Navbar />
-			<Hero />
-			<div className='section-spacer'></div>
-			<SpeakersSection speakers={speakers} />
-			<div className='section-spacer'></div>
-			<WorkshopSection workshops={workshops} />
-			<div className='section-spacer'></div>
-			<Sponsors />
-			<div className='section-spacer'></div>
-			<Footer />
-		</div>
-	)
+  return (
+    <div>
+      <Navbar />
+      <Hero />
+      <div className="section-spacer"></div>
+      <SpeakersSection speakers={speakers} />
+      <div className="section-spacer"></div>
+      <WorkshopSection workshops={workshops} />
+      <div className="section-spacer"></div>
+      <Sponsors />
+      <div className="section-spacer"></div>
+      <Footer />
+    </div>
+  )
 }
