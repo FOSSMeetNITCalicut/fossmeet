@@ -17,7 +17,7 @@ const Modal = ({
     <ModalWrapper>
       {showModal && (
         <div
-            className="bg-white 
+          className="bg-white 
             border-2 border-black
             h-auto
             w-[560px]
@@ -59,7 +59,6 @@ const Modal = ({
                 </h1>
                 <p className="text-wrap mt-2 text-gray-500 text-sm sm:text-base">
                   {currWorkshop.description}
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis sapiente ducimus, aliquid reprehenderit quis quod veritatis blanditiis necessitatibus atque. Fugit.
                 </p>
               </div>
             </div>
