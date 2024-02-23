@@ -25,6 +25,13 @@ export default function Sponsors() {
 						tier='🥈 SILVER TIER'
 						link='https://fossunited.org/'
 					/>
+					<Sponsor
+						imgSrc={'/fsf.svg'}
+						dotColor='#FF3D84'
+						name='Free Software Foundation'
+						tier='🥈 SUPPORTER TIER'
+						link='https://fsf.org/'
+					/>
 				</div>
 			</div>
 		</div>
