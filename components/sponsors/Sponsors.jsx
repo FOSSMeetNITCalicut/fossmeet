@@ -32,6 +32,14 @@ export default function Sponsors() {
 						tier='🥈 SUPPORTER TIER'
 						link='https://fsf.org/'
 					/>
+					<Sponsor
+						imgSrc={'/Gnomelogo.svg'}
+						dotColor='#FF3D84'
+						name='GNOME'
+						tier='🥈 SUPPORTER TIER'
+						link='https://www.gnome.org/'
+						scale={0.4}
+					/>
 				</div>
 			</div>
 		</div>
@@ -39,12 +47,15 @@ export default function Sponsors() {
 }
 
 
-export function Sponsor({ link, imgSrc, dotColor, name, tier }) {
+export function Sponsor({ link, imgSrc, dotColor, name, tier, scale = 1 }) {
 	return (
 		<a href={link} target="_blank" rel="noreferrer noopener">
 			<div className={styles2['sponsor']}>
 				<div className={styles2['logo-container']}>
 					<img
+						style={{
+							scale: scale,
+						}}
 						src={imgSrc}
 						alt="company-logo"
 						className={styles2['company-logo']}

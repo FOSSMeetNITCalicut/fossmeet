@@ -26,6 +26,21 @@ export default async function Page() {
               tier="🥈 SILVER TIER"
               link="https://fossunited.org/"
             />
+            <Sponsor
+              imgSrc={'/fsf.svg'}
+              dotColor="#FF3D84"
+              name="Free Software Foundation"
+              tier="🥈 SUPPORTER TIER"
+              link="https://fsf.org/"
+            />
+            <Sponsor
+              imgSrc={'/Gnomelogo.svg'}
+              dotColor="#FF3D84"
+              name="GNOME"
+              tier="🥈 SUPPORTER TIER"
+              link="https://www.gnome.org/"
+              scale={0.4}
+            />
           </div>
         </div>
       </main>
