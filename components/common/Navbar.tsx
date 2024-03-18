@@ -20,11 +20,17 @@ export default function NavBar() {
         <Link href={'#contact'}>Contact</Link>
         <Link
           href="https://www.townscript.com/e/fossmeet24-022332"
-          target="_blank"
           className={styles['register-btn']}
         >
-          <span>Register</span>
-          <img src="arrow_right_alt.svg" alt="External link" />
+          <button
+            style={{
+              display: 'flex',
+            }}
+            disabled
+          >
+            <span> Registration Closed</span>
+            <img src="arrow_right_alt.svg" alt="External link" />
+          </button>
         </Link>
       </div>
 
@@ -56,13 +62,11 @@ export default function NavBar() {
             <Link href={'/schedule'}>Schedule</Link>
             <Link href={'/sponsors'}>Sponsors</Link>
             <Link href={'#contact'}>Contact</Link>
-            <Link
-              href="https://www.townscript.com/e/fossmeet24-022332"
-              target="_blank"
-              className={styles['register-btn']}
-            >
-              <span>Register</span>
-              <img src="arrow_right_alt.svg" alt="External link" />
+            <Link href="https://www.townscript.com/e/fossmeet24-022332">
+              <button className={styles['register-btn']} disabled>
+                <span>Registration Closed</span>
+                <img src="arrow_right_alt.svg" alt="External link" />
+              </button>
             </Link>
           </div>
         </div>

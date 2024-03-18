@@ -25,8 +25,8 @@ export default function Hero() {
             </div>
           </div>
           <Link href={'https://www.townscript.com/e/fossmeet24-022332'}>
-            <button className={styles['cta-button']}>
-              <span>Register</span>
+            <button className={styles['cta-button']} disabled>
+              <span>Registration Closed</span>
               <img src="/arrow_right_alt.svg" alt="register link" />
             </button>
           </Link>
