@@ -72,7 +72,7 @@ export default function Footer() {
                     <img src="/twitter.svg" alt="Twitter" />
                   </a>
                   <a
-                    href="https://www.mastodon.social/@FOSSCell@floss.social"
+                    href="https://floss.social/@FOSSCell"
                     target="_blank"
                     rel="noreferrer noopener"
                   >
