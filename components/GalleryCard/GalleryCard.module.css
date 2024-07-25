@@ -1,0 +1,67 @@
+.container {
+    width: 50%;
+    height: 60vh;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.innerContainer {
+    width: 95%;
+    height: 60vh;
+    background-color: white;
+    margin-top: 2rem;
+    border-radius: 25px;
+    gap: 1rem;
+    box-shadow: 50px 50px 50px 50px rgba(0, 0, 0, 0.1);
+}
+
+.imageContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.imageRow {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.image {
+    width: 50%;
+    aspect-ratio: 16/9;
+    border-radius: 25px;
+    object-fit: cover;
+    cursor: pointer;
+    image-rendering: pixelated;
+}
+
+.viewMore {
+    width: 50%;
+    aspect-ratio: 16/9;
+    border-radius: 25px;
+    border-color: #258EFF;
+    border-width: 5px;
+    background-color: #E6F2FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+}
+
+.viewMoreText {
+    color: #0061C9;
+    font-size: 25px;
+    flex-direction: column;
+    display: flex;
+    text-align: left;
+    font-weight: bolder;
+}
