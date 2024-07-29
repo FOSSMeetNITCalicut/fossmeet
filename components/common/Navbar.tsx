@@ -62,7 +62,7 @@ export default function NavBar() {
             <Link href={'/schedule'}>Schedule</Link>
             <Link href={'/sponsors'}>Sponsors</Link>
             <Link href={'#contact'}>Contact</Link>
-            <Link href="https://www.townscript.com/e/fossmeet24-022332">
+            <Link href="https://www.townscript.com/e/fossmeet24-022332" className={styles['disabled-link']}>
               <button className={styles['register-btn']} disabled>
                 <span>Registration Closed</span>
                 <img src="arrow_right_alt.svg" alt="External link" />

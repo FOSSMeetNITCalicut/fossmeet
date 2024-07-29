@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { FaArrowRight } from 'react-icons/fa';
 import styles from "./GalleryCard.module.css";
 
@@ -8,13 +9,13 @@ export default function GalleryCard() {
                 <div className={styles['imageContainer']}>
                     <div className={styles['imageRow']}>
                         <img
-                            src={'/gallery_images/img-1.jpg'}
+                            src={'/gallery_images/img-31.jpg'}
                             alt="fossmeet logo"
                             className={styles['image']}
                         />
 
                         <img
-                            src={'/gallery_images/img-2.jpg'}
+                            src={'/gallery_images/img-32.jpg'}
                             alt="fossmeet logo"
                             className={styles['image']}
                         />
@@ -22,12 +23,12 @@ export default function GalleryCard() {
                     </div>
                     <div className={styles['imageRow']}>
                         <img
-                            src={'/gallery_images/img-3.jpg'}
+                            src={'/gallery_images/img-33.jpg'}
                             alt="fossmeet logo"
                             className={styles['image']}
                         />
 
-                        <div className={styles['viewMore']}>
+                        <Link className={styles['viewMore']} href={`/gallery`}>
                             <div className={styles['viewMoreText']}>
                                 <span>VISIT</span>
                                 <span>FOSSMeeT&apos;24</span>
@@ -40,7 +41,7 @@ export default function GalleryCard() {
                                     <FaArrowRight />
                                 </span>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                 </div>
             </div>

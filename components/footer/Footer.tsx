@@ -93,7 +93,7 @@ export default function Footer() {
       </div>
       <div className={styles['bottom']}>
         <div className={styles['logo']}>FOSSMeet&apos;24</div>
-        <span>An event conducted by FOSSCell NITC and CSEA</span>
+        <span>An event conducted by FOSSCell NITC in collaboration with CSEA</span>
       </div>
     </footer>
   )

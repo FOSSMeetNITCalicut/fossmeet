@@ -1,14 +1,10 @@
 import Footer from '@/components/footer/Footer'
+import GalleryCard from '@/components/GalleryCard'
 import Hero from '@/components/hero/Hero'
 import Sponsors from '@/components/sponsors/Sponsors'
-import WorkshopSection from '@/components/workshops/Section'
-import { client } from '@/sanity/lib/client'
-import { Speaker } from '@/sanity/schemas/speaker'
-import { Workshop } from '@/sanity/schemas/workshop'
-import Navbar from '../components/common/Navbar'
-import SpeakersSection from '../components/speakers/Section'
 import ThanksCard from '@/components/ThanksCard'
-import GalleryCard from '@/components/GalleryCard'
+import Navbar from '../components/common/Navbar'
+import styles from './page.module.css'
 
 export default async function Home() {
   const showThankyou = true;
@@ -32,21 +28,15 @@ export default async function Home() {
   //   }
   // )
 
-  if(showThankyou){
-    return(
+  if (showThankyou) {
+    return (
       <div>
         <Navbar />
-        <div style={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          flexDirection: 'column',
-          marginTop: '25px',
-          marginBottom: '25px'
-        }}>
-        <ThanksCard />   
-        <GalleryCard />
-        </div>     
+        <div className={styles['thanks-gallery-wrapper']}>
+          <ThanksCard />
+          <GalleryCard />
+        </div>
+        <Footer />
       </div>
     )
   }

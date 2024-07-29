@@ -1,0 +1,20 @@
+.image_card {
+  z-index: -10;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transform: scale(1);
+  transition: all 0.3s ease-out;
+}
+
+.image_card:hover {
+  transform: scale(1.2);
+  /* filter: grayscale(0.2); */
+}
+
+
+.image_container {
+  overflow: hidden;
+  margin-bottom: 10px;
+  z-index: -10;
+}

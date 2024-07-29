@@ -1,13 +1,11 @@
 .container {
     width: 50%;
-    height: 60vh;
     display: flex;
     justify-content: flex-end;
 }
 
 .innerContainer {
     width: 95%;
-    height: 60vh;
     background-color: white;
     margin-top: 2rem;
     border-radius: 25px;
@@ -67,9 +65,54 @@
 
 .viewMoreText {
     color: #0061C9;
-    font-size: 25px;
+    font-size: 1.6rem;
     flex-direction: column;
     display: flex;
     text-align: left;
     font-weight: bolder;
+}
+
+
+@media (max-width: 1200px) {
+    .container {
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 800px) {
+    
+   .imageContainer {
+        padding: 1.5rem;
+   } 
+}
+
+@media (max-width: 700px) {
+    .viewMoreText {
+        font-size: 1.2rem;
+        
+    }
+}
+
+
+@media (max-width: 550px) {
+    .imageContainer {
+        padding: 1.1rem;
+    }
+    .viewMoreText {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+    }
+    .viewMore {
+        border-width: 2px;
+    }
+    .viewMoreText {
+        font-size: 0.9rem;
+    }
+
 }

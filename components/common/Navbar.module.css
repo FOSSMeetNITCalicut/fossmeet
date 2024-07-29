@@ -48,6 +48,7 @@
 	display: flex;
 	align-items: center;
 	transition: var(--default-transition);
+	pointer-events: none;
 }
 
 .register-btn:hover {
@@ -60,6 +61,10 @@
 
 .register-btn:hover img {
 	rotate: 45deg;
+}
+
+.disabled-link {
+	pointer-events: none;
 }
 
 .ham-wrapper {

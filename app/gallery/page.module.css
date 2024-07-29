@@ -1,0 +1,13 @@
+.media_gallery {
+  /* margin: 50px 10px; */
+  line-height: 0;
+  column-count: 3;
+  column-gap: 10px;
+  z-index: -10;
+}
+
+@media (max-width: 1080px) {
+  .media_gallery {
+    column-count: 1;
+  }
+}
