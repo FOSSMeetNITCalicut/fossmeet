@@ -40,8 +40,16 @@
     border-radius: 25px;
     object-fit: cover;
     cursor: pointer;
-    image-rendering: pixelated;
 }
+
+.image {
+    width: 50%;
+    height: 100%;
+    z-index: 0;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
 
 .viewMore {
     width: 50%;
