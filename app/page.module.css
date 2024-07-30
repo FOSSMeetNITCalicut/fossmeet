@@ -6,3 +6,10 @@
     margin-top: 5rem;
     margin-bottom: 12rem;
 }
+
+
+@media (max-width: 1200px) {
+    .thanks-gallery-wrapper {
+        
+    }
+}
