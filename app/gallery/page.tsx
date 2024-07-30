@@ -46,7 +46,7 @@ const Media = () => {
 
             <Head>
                 <title>FOSSMeet&apos;24</title>
-                <meta name='description' content='FOSS Meet 2022-23' />
+                <meta name='description' content='FOSS Meet 2023-24' />
                 <link rel='icon' href='/favicon.ico' />
             </Head>
 
