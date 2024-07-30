@@ -105,8 +105,11 @@
 }
 
 @media (max-width: 500px) {
+    .imageContainer {
+        padding: 0.9rem;
+    }
     .container {
-        width: 90%;
+        width: 86%;
     }
     .viewMore {
         border-width: 2px;

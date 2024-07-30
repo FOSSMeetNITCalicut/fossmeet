@@ -60,12 +60,12 @@
 }
 
 .contentSubText {
-    font-family: 'Inter', cursive;
+    /* font-family: 'Inter', cursive; */
     color: white;
     font-size: 1.4rem;
     font-style: italic;
     text-align: center;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 
@@ -100,6 +100,9 @@
 
 @media (max-width: 500px) {
     .innerBox {
-        width: 90%;
+        width: 86%;
+    }
+    .contentSubText {
+        font-size: 0.9rem;
     }
 }
