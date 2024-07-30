@@ -10,13 +10,11 @@ export default function GalleryCard() {
                     <div className={styles['imageRow']}>
                         <img
                             src={'/gallery_images/img-31.jpg'}
-                            alt="fossmeet logo"
                             className={styles['image']}
                         />
 
                         <img
                             src={'/gallery_images/img-32.jpg'}
-                            alt="fossmeet logo"
                             className={styles['image']}
                         />
 
@@ -24,7 +22,6 @@ export default function GalleryCard() {
                     <div className={styles['imageRow']}>
                         <img
                             src={'/gallery_images/img-33.jpg'}
-                            alt="fossmeet logo"
                             className={styles['image']}
                         />
 
