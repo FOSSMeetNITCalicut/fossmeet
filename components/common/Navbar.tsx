@@ -15,7 +15,7 @@ export default function NavBar() {
       <div className={styles['links-wrapper']}>
         <Link href={'/workshops'}>Workshops</Link>
         <Link href={'/speakers'}>Speakers</Link>
-        <Link href={'/schedule'}>Schedule</Link>
+        <Link href={'/gallery'}>Gallery</Link>
         <Link href={'/sponsors'}>Sponsors</Link>
         <Link href={'#contact'}>Contact</Link>
         <Link
@@ -59,7 +59,7 @@ export default function NavBar() {
           >
             <Link href={'/workshops'}>Workshops</Link>
             <Link href={'/speakers'}>Speakers</Link>
-            <Link href={'/schedule'}>Schedule</Link>
+            <Link href={'/gallery'}>Gallery</Link>
             <Link href={'/sponsors'}>Sponsors</Link>
             <Link href={'#contact'}>Contact</Link>
             <Link href="https://www.townscript.com/e/fossmeet24-022332" className={styles['disabled-link']}>
