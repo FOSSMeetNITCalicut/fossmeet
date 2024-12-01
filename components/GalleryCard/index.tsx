@@ -48,7 +48,6 @@ const Media = () => {
                                     <img
                                         src={urlForImage(galleryImages.find(item => item.title === "img-3").image)}
                                         className={styles['image']}
-                                        alt="Gallery Image"
                                     />
                                 )}
 
@@ -56,7 +55,6 @@ const Media = () => {
                                     <img
                                         src={urlForImage(galleryImages.find(item => item.title === "img-32").image)}
                                         className={styles['image']}
-                                        alt="Gallery Image"
                                     />
                                 )}
 
@@ -70,7 +68,6 @@ const Media = () => {
                                     <img
                                         src={urlForImage(galleryImages.find(item => item.title === "img-33").image)}
                                         className={styles['image']}
-                                        alt="Gallery Image"
                                     />
                                 )}
 
