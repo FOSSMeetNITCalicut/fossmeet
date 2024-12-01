@@ -1,15 +1,15 @@
 'use client';
 
-import React, { useState, useEffect } from "react";
 import Card from "@/components/Card";
 import Navbar from "@/components/common/Navbar";
 import PageTitle from "@/components/common/PageTitle";
 import Footer from "@/components/footer/Footer";
-import Head from "next/head";
-import styles from "./page.module.css";
+import Loader from "@/components/Loader";
 import { client } from "@/sanity/lib/client";
 import { urlForImage } from "@/sanity/lib/image";
-import Loader from "@/components/Loader";
+import Head from "next/head";
+import { useEffect, useState } from "react";
+import styles from "./page.module.css";
 
 const Media = () => {
   const [loading, setLoading] = useState(true);
@@ -17,7 +17,7 @@ const Media = () => {
 
   useEffect(() => {
     const fetchImages = async () => {
-      setLoading(true); 
+      setLoading(true);
       try {
         const images = await client.fetch(`*[_type=="gallery_images"]`);
         console.log(images);
@@ -25,7 +25,7 @@ const Media = () => {
       } catch (error) {
         console.error(error);
       } finally {
-        setLoading(false); 
+        setLoading(false);
       }
     };
 
@@ -43,10 +43,10 @@ const Media = () => {
       <Navbar />
       <PageTitle imageSrc={"/camera.png"} title={"Gallery"} tag={"FOSSMeet'24"} />
 
-      <div className={`${styles.media_body} margin`} style={{ minHeight: "50vh" }}>
+      <div className={`${styles.media_body} margin`} style={{ minHeight: "100vh" }}>
         {loading || galleryImages.length === 0 ? (
           <div className={styles.loading}>
-            <Loader loading={loading} /> 
+            <Loader loading={loading} />
           </div>
         ) : (
           <div className={styles.media_gallery}>
